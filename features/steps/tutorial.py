@@ -1,3 +1,5 @@
+# Python step implementation for the scenarios
+
 from behave import *
 
 @given('we have behave installed')
