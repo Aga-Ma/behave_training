@@ -1,3 +1,3 @@
 Scenario: Search foa an account
-  Given I search foa a valid account
+  Given I search for a valid account
    Then I will see the account details
