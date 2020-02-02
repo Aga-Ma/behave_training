@@ -1,2 +1,2 @@
 # behave_training
-Behave training materials repository
+Behave training materials
