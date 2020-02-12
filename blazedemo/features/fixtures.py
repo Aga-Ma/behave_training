@@ -5,7 +5,7 @@ from web.web import Web
 
 @fixture
 def browser_chrome(context, timeout=30, **kwargs):
-    browser = webdriver.Chrome("C:/chromedriver.exe")
+    browser = webdriver.Chrome("C:/drivers/chromedriver.exe")
     web = Web(browser)
     context.web = web
     yield context.web
