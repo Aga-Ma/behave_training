@@ -1,6 +1,10 @@
 from behave import given, when, then
 
 
+# could be enhanced with cities parametrization
+# https://github.com/dihnatsyeu/blazemeter-behave/blob/master/features/steps/flight_search_steps.py
+
+
 @given("the user is on search page")
 def user_on_search_page(context):
     context.web.open("http://blazedemo.com/")
