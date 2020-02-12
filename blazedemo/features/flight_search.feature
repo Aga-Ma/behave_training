@@ -1,3 +1,5 @@
+# code prepared based on tutorial: https://www.blazemeter.com/blog/using-the-behave-framework-for-selenium-bdd-testing-a-tutorial/
+
 @fixture.browser.chrome
 Feature: The user can book available flights
 
