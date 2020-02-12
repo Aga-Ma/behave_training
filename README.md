@@ -1,2 +1,2 @@
 # Behave training
-Behave training materials
+Just another repository to practice something new
