@@ -1,3 +1,4 @@
 behave >= 1.2.6
 selenium >= 3.141.0
-allure-behave==2.8.10
+allure-behave>=2.8.10
+PyHamcrest>=2.0.0
