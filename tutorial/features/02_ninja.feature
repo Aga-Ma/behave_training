@@ -1,4 +1,7 @@
+# https://jenisys.github.io/behave.example/tutorials/tutorial02.html
+
 Feature: Fight or flight
+
   In order to increase the ninja survival rate,
   As a ninja commander
   I want my ninjas to decide whether to take on an
@@ -7,7 +10,7 @@ Feature: Fight or flight
   Scenario: Weaker opponent
     Given the ninja has a third level black-belt
     When attacked by a samurai
-    Then the ninja should engage the oponent
+    Then the ninja should engage the opponent
 
   Scenario: Stronger opponent
     Given the ninja has a third level black-belt
