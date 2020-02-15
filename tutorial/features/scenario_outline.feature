@@ -2,6 +2,8 @@
 # expected outcomes
 # https://behave.readthedocs.io/en/latest/tutorial.html#scenario-outlines
 
+Feature: test
+
 Scenario Outline: Blenders
   Given I put <thing> in a blender,
   When I switch the blender on

@@ -1,5 +1,7 @@
 # Associating a table of data with a step
 
+Feature: some test feature
+
 Scenario: some scenario
   Given a set of specific users
     | name      | department  |

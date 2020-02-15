@@ -1,3 +1,5 @@
-Scenario: Search foa an account
+Feature: test
+
+Scenario: Search for an account
   Given I search for a valid account
    Then I will see the account details
