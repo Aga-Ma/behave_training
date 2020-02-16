@@ -1,13 +1,14 @@
 # Created when scenario should be run with a number of variables giving a set of known states, actions and/or
 # expected outcomes
 # https://behave.readthedocs.io/en/latest/tutorial.html#scenario-outlines
+# https://jenisys.github.io/behave.example/tutorials/tutorial04.html
 
-Feature: test
+Feature: Scenario outline
 
 Scenario Outline: Blenders
-  Given I put <thing> in a blender,
+  Given I put "<thing>" in a blender,
   When I switch the blender on
-  Then it should transform into <other thing>
+  Then it should transform into "<other thing>"
 
 Examples: Amphibians
   | thing         | other thing |
