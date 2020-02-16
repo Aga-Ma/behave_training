@@ -4,7 +4,7 @@
 Feature: Step setup table
 
 Scenario: Setup table
-  Given a set of specific users
+  Given a set of specific users:
     | name      | department  |
     | Barry     | Beer Cans   |
     | Pudey     | Silly Walks |
