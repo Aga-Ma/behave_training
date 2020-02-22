@@ -132,3 +132,6 @@ dmypy.json
 
 #reports
 allure_report/
+
+#log files
+*/failed_scenarios_screenshots/*
