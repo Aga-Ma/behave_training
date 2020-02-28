@@ -6,12 +6,7 @@ def before_scenario(context, scenario):
     context.driver = webdriver.Chrome("C:/drivers/chromedriver.exe")
     # Wait implicitly for elements to be ready before attempting interactions
     context.driver.implicitly_wait(10)
-    context.driver.maximize_window()
 
 
 def after_scenario(context, scenario):
     context.driver.quit()
-
-
-
-
