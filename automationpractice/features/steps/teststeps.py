@@ -14,19 +14,20 @@ def step_impl(context):
 @step('I login with username "([^"]*)" and password "([^"]*)"')
 def step_impl(context,username,password):
     page = LoginPage(context)
-    page.email.send_keys("abc@xyz.com")
-    page.password.send_keys("Test@123")
+    page.email.send_keys("baxome2199@kamismail.com")
+    page.password.send_keys("poiuytrewq123")
     page.signin_button.click()
     # page.login(username=username,passwd=password)
 
 
 @then("I verify that I successfully logged in by logging out")
 def step_impl(context):
-    AutomationHomePage(context).sign_out.click()
+    HomePage(context).sign_out.click()
+
 
 @step("I hover on women menu item and click summer dresses")
 def step_impl(context):
-    page = AutomationHomePage(context).HeaderPage(context)
+    page = HomePage(context).HeaderPage(context)
     page.hover(page.menu_women)
     page.DressesPage(context).summer_dresses.click()
     assert "SUMMER DRESSES" in SummerDressesCatalogPage(context).category_name.text
@@ -44,7 +45,7 @@ def step_impl(context):
 
 @step("verify the item and price")
 def step_impl(context):
-    page = ShoppingCartSummaryPage(context)
+    page = ShoppingCart(context)
     assert context.unitprice in page.unit_price.text
     page.proceed_to_checkout.click()
 
@@ -59,7 +60,7 @@ def step_impl(context):
 
 @step("I verify shipping address and proceed")
 def step_impl(context):
-    page = ShippingAddressPage(context)
+    page = ShippingPage(context)
     assert "SHIPPING" in page.page_heading.text
     page.terms.click()
     page.proceed_to_checkout.click()
@@ -67,19 +68,19 @@ def step_impl(context):
 
 @step("I select payment method")
 def step_impl(context):
-    page = PaymentMethodPage(context)
+    page = PaymentPage(context)
     assert "PLEASE CHOOSE YOUR PAYMENT METHOD" in page.page_heading.text
     page.check.click()
 
 
 @step("I confirm the order")
 def step_impl(context):
-    page = OrderSummaryPage(context)
+    page = SummaryPage(context)
     assert "ORDER SUMMARY" in page.page_heading.text
     page.confirm_order.click()
 
 
 @then("I verify successful purchase")
 def step_impl(context):
-    page = OrderConfirmationPage(context)
+    page = OrderConfirmation(context)
     assert "ORDER CONFIRMATION" in page.page_heading.text

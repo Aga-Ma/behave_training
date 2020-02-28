@@ -17,7 +17,7 @@ def before_scenario(context, scenario):
 
 
 def after_scenario(context, scenario):
-    print("scenario status" + scenario.status)
+    print("scenario status" + str(scenario.status))
     context.browser.quit()
 
 

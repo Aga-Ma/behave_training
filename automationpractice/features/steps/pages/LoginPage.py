@@ -15,7 +15,7 @@ class LoginPage(BasePage):
             context.browser,
             base_url='http://www.practiceselenium.com/')
 
-    def login(self, username="abc@xyz.com", passwd="Test@123"):
+    def login(self, username="baxome2199@kamismail.com", passwd="poiuytrewq123"):
         self.find_element(*self.locator_dictionary['email']).send_keys(username)
         self.find_element(*self.locator_dictionary['password']).send_keys(passwd)
         self.find_element(*self.locator_dictionary['signin_button']).click()

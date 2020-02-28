@@ -8,3 +8,4 @@ Feature: The user can book available flights
     When user selects Paris as departure city
     And user selects London as destination city
     And clicks on Find Flights button
+    Then flights are found
