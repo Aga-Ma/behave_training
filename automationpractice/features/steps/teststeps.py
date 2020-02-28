@@ -12,7 +12,7 @@ def step_impl(context):
 
 
 @step('I login with username "([^"]*)" and password "([^"]*)"')
-def step_impl(context,username,password):
+def step_impl(context, username, password):
     page = LoginPage(context)
     page.email.send_keys("baxome2199@kamismail.com")
     page.password.send_keys("poiuytrewq123")
